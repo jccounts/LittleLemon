@@ -1,15 +1,13 @@
 import React from 'react';
-import Header from './components/Header';
+import Navbar from "./components/Navbar";
 import './App.css';
 
 function App() {
-  return (
-      <React.Fragment>
-        <Header/>
-
-        Homepage
-      </React.Fragment>
-  );
+    return (
+        <React.Fragment>
+            <Navbar/>
+        </React.Fragment>
+    );
 }
 
 export default App;
