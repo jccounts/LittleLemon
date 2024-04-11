@@ -30,44 +30,31 @@ export default function Footer() {
                 <li>
                     <h1 className="footer-header">Contact</h1>
                     <ul className="footer-links">
-                        <li>2395 Maldove Way,</li>
+                        <li>2395 Maldove Street,</li>
                         <li>Chicago Illinois</li>
                         <br></br>
-                        <li>(629)-243-6827</li>
+                        <li>(312)-867-5309</li>
                         <br></br>
                         <a
                             href="mailto: info@littlelemon.com"
                             target="_blank"
                             rel="noreferrer"
-                        >
-                            info@littlelemon.com
-                        </a>
+                        >info@littlelemon.com</a>
                     </ul>
                 </li>
                 <li>
                     <h1 className="footer-header">Connect</h1>
                     <ul className="footer-links">
                         <a
-                            href="https://www.facebook.com/"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            Facebook
-                        </a>
-                        <a
                             href="https://www.instagram.com/"
                             target="_blank"
                             rel="noreferrer"
-                        >
-                            Instagram
-                        </a>
+                        >Instagram</a>
                         <a
                             href="https://www.youtube.com/"
                             target="_blank"
                             rel="noreferrer"
-                        >
-                            Join us!
-                        </a>
+                        >Join us!</a>
                     </ul>
                 </li>
             </menu>

@@ -128,6 +128,7 @@ Link:link {
 
 .hero-text > h2 {
   font-size: 2.5rem;
+  padding: 20px 0;
 }
 
 .hero-image {
@@ -143,7 +144,7 @@ Link:link {
 
 /* SPECIALS */
 .specials {
-  padding: 2rem 5rem 0 5rem;
+  padding: 0 5rem 3rem 5rem;
   animation-duration: 0.33s;
   animation-timing-function: ease-in-out;
   animation-name: slideDownFade;
@@ -206,11 +207,6 @@ Link:link {
   border-color: black;
   transition: 0.2s;
 }
-
-.specials-carousel {
-  display: none;
-}
-
 
 
 /* ABOUT */
