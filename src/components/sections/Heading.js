@@ -1,5 +1,9 @@
-import {Link} from 'react-router-dom';
+import {Link, useLocation} from 'react-router-dom';
+
 export default function Heading() {
+    const location = useLocation();
+    const showLink = !location.pathname.includes("reservations");
+
     return (
         <header>
             <article className="call-to-action">
@@ -10,7 +14,7 @@ export default function Heading() {
                         located on  Maldove Street in Chicago, Illinois.
                         We focus on traditional recipes served with a modern twist.</p>
                     <br></br>
-                    <Link className="action-button" to="/reservations">Reserve a table</Link>
+                    {showLink && <Link className="action-button" to="/reservations">Reserve a table</Link>}
                 </section>
 
                 <section className="hero-image">
