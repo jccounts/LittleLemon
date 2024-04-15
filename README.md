@@ -1,3 +1,42 @@
+# Little Lemon Restaurant
+
+This is the final Capstone project, for the Meta Front-End Developer Professional Certificate. 
+The course is taught by Coursera.
+The project is a sample restaurant website. Users can view weekly specials, see a full menu and reserve a table.
+
+[Meta Front-End Developer Professional Certificate](https://www.coursera.org/professional-certificates/meta-front-end-developer)
+
+## Screenshots
+
+### Home Page
+![image](https://raw.githubusercontent.com/jccounts/LittleLemon/main/src/images/Screenshot-home.png?token=GHSAT0AAAAAACQW5IELPXZD5GU5RMT3FJ2EZQ5XG4A)
+
+
+
+
+
+### Reserve Table Page
+
+![image](https://raw.githubusercontent.com/jccounts/LittleLemon/main/src/images/Screenshot-reserve.png?token=GHSAT0AAAAAACQW5IEK34AVKTRH567WJC4AZQ5XHLA)
+
+
+
+### Tech Stack:
+
+- HTML
+- CSS
+- JSX
+- React
+
+### Third Party Libraries & APIs:
+
+- react-router-dom
+- react-responsive-carousel
+- Meta front-end table-booking API
+
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
