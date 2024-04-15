@@ -33,7 +33,7 @@ export default function Footer() {
                         <li>2395 Maldove Street,</li>
                         <li>Chicago Illinois</li>
                         <br></br>
-                        <li>(312)-867-5309</li>
+                        <li>(312)867-5309</li>
                         <br></br>
                         <a
                             href="mailto: info@littlelemon.com"
