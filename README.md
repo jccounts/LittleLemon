@@ -9,17 +9,10 @@ The project is a sample restaurant website. Users can view weekly specials, see 
 ## Screenshots
 
 ### Home Page
-![image](https://raw.githubusercontent.com/jccounts/LittleLemon/main/src/images/Screenshot-home.png?token=GHSAT0AAAAAACQW5IELPXZD5GU5RMT3FJ2EZQ5XG4A)
-
-
-
-
+![Little Lemon Home Page](src/images/Screenshot-home.png)
 
 ### Reserve Table Page
-
-![image](https://raw.githubusercontent.com/jccounts/LittleLemon/main/src/images/Screenshot-reserve.png?token=GHSAT0AAAAAACQW5IEK34AVKTRH567WJC4AZQ5XHLA)
-
-
+![Reserve Table Page](src/images/Screenshot-reserve.png)
 
 ### Tech Stack:
 
