@@ -22,7 +22,7 @@ export default function Navigation(props) {
             </Link>
             <a
                 className="hover-effect"
-                href={require("../images/logo-big.png")}
+                href={require("../images/menu.png")}
                 target="_blank"
                 rel="noreferrer"
             >

@@ -17,7 +17,7 @@ export default function Confirmation() {
             <section className="redirect-buttons">
                 <a
                     className="redirect-button"
-                    href={require("../../images/logo-big.png")}
+                    href={require("../../images/menu.png")}
                     target="_blank"
                     rel="noreferrer"
                 >Browse Menu</a>

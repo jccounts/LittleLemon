@@ -15,7 +15,7 @@ export default function Footer() {
                         <Link to="/">Home</Link>
                         <Link to="/about">About</Link>
                         <a
-                            href={require("../images/logo-big.png")}
+                            href={require("../images/menu.png")}
                             target="_blank"
                             rel="noreferrer"
                         >
