@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 export default function ReservationForm(props) {
     const [fName, setFName] = useState("");
     const [lName, setLName] = useState("");
@@ -12,6 +12,8 @@ export default function ReservationForm(props) {
     const [finalTime, setFinalTime] = useState(
         props.availableTimes.map((times) => <option>{times}</option>)
     );
+    const navigate = useNavigate();
+
 
     function handleDateChange(e) {
         setDate(e.target.value);
@@ -24,11 +26,64 @@ export default function ReservationForm(props) {
         setFinalTime(props.availableTimes.map((times) => <option>{times}</option>));
     }
 
+    function clearErrors() {
+        let submittedName = document.getElementById("fName");
+        let submittedEmail = document.getElementById("email");
+        let submittedTel = document.getElementById("phonenum");
+        let submittedDate = document.getElementById("date");
+
+        submittedName.style.border = "";
+        submittedEmail.style.border = "";
+        submittedTel.style.border = "";
+        submittedDate.style.border = "";
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        clearErrors();
+
+        let submittedName = document.getElementById("fName");
+        let submittedEmail = document.getElementById("email");
+        let submittedTel = document.getElementById("phonenum");
+        let submittedDate = document.getElementById("date");
+
+
+        if (submittedName.value === "" ||
+            submittedEmail.value === "" ||
+            submittedTel.value === "" ||
+            submittedDate.value === "") {
+
+            const errorStyle = "1px solid red"
+
+            if (submittedName.value === "") {
+                submittedName.style.border = errorStyle;
+            }
+            if (submittedEmail.value === "") {
+                submittedEmail.style.border = errorStyle;
+            }
+            if (submittedTel.value === "") {
+                submittedTel.style.border = errorStyle;
+            }
+            if (submittedDate.value === "") {
+                submittedDate.style.border = errorStyle;
+            }
+
+
+
+
+            alert("Please fill out all required fields.");
+        }
+        else {
+            navigate("/confirmation");
+        }
+    };
+
     return (
         <form className="reservation-form">
             <div className="form-column">
                 <div>
-                    <label htmlFor="fName">First Name</label> <br></br>
+                    <label htmlFor="fName">First Name*</label> <br></br>
                     <input
                         type="text"
                         id="fName"
@@ -55,7 +110,7 @@ export default function ReservationForm(props) {
                 </div>
 
                 <div>
-                    <label htmlFor="email">Email</label> <br></br>
+                    <label htmlFor="email">Email*</label> <br></br>
                     <input
                         type="email"
                         id="email"
@@ -69,7 +124,7 @@ export default function ReservationForm(props) {
                 </div>
 
                 <div>
-                    <label htmlFor="phonenum">Phone Number</label> <br></br>
+                    <label htmlFor="phonenum">Phone Number*</label> <br></br>
                     <input
                         type="tel"
                         id="phonenum"
@@ -99,7 +154,7 @@ export default function ReservationForm(props) {
                 </div>
 
                 <div>
-                    <label htmlFor="date">Select Date</label> <br></br>
+                    <label htmlFor="date">Select Date*</label> <br></br>
                     <input
                         type="date"
                         id="date"
@@ -140,7 +195,7 @@ export default function ReservationForm(props) {
                             <br/>Please review your request before submitting.
                         </p>
                     </small>
-                    <Link className="action-button" to="/confirmation">
+                    <Link className="action-button" to="/confirmation" onClick={handleSubmit}>
                         Reserve Table
                     </Link>
                 </div>
